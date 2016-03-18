@@ -13,6 +13,7 @@
 		A3A7BF7F1C9BC2F5000F8B9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A7BF7E1C9BC2F5000F8B9E /* Images.xcassets */; };
 		A3A7BF821C9BC2F5000F8B9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3A7BF801C9BC2F5000F8B9E /* LaunchScreen.xib */; };
 		A3A7BF8E1C9BC2F6000F8B9E /* StepcounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A7BF8D1C9BC2F6000F8B9E /* StepcounterTests.swift */; };
+		A3A7BF981C9BC310000F8B9E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A7BF971C9BC310000F8B9E /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A3A7BF871C9BC2F6000F8B9E /* StepcounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepcounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A7BF8C1C9BC2F6000F8B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A7BF8D1C9BC2F6000F8B9E /* StepcounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepcounterTests.swift; sourceTree = "<group>"; };
+		A3A7BF971C9BC310000F8B9E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A7BF981C9BC310000F8B9E /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		A3A7BF691C9BC2F5000F8B9E = {
 			isa = PBXGroup;
 			children = (
+				A3A7BF971C9BC310000F8B9E /* CoreMotion.framework */,
 				A3A7BF741C9BC2F5000F8B9E /* Stepcounter */,
 				A3A7BF8A1C9BC2F6000F8B9E /* StepcounterTests */,
 				A3A7BF731C9BC2F5000F8B9E /* Products */,
@@ -161,6 +165,7 @@
 				TargetAttributes = {
 					A3A7BF711C9BC2F5000F8B9E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = C57WNCPU27;
 					};
 					A3A7BF861C9BC2F6000F8B9E = {
 						CreatedOnToolsVersion = 6.2;
@@ -336,9 +341,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Harshul Shah (EEU44DK82S)";
 				INFOPLIST_FILE = Stepcounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "31e5d110-3c83-4b0d-aedc-6c36d16d5377";
 			};
 			name = Debug;
 		};
@@ -346,9 +354,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Harshul Shah (EEU44DK82S)";
 				INFOPLIST_FILE = Stepcounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "31e5d110-3c83-4b0d-aedc-6c36d16d5377";
 			};
 			name = Release;
 		};
